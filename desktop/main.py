@@ -254,8 +254,14 @@ class MainWindow(QMainWindow):
         category_label = QLabel("选择榜单:")
         self.category_combo = QComboBox()
 
-        from apps.voting.models import VoteCategory
-        for value, label in VoteCategory.choices:
+        # 硬编码投票类别定义 (不依赖 backend 模型)
+        CATEGORY_CHOICES = [
+            ("age_discrimination", "35+ 年龄歧视观察榜"),
+            ("gender_discrimination", "性别歧视观察榜"),
+            ("pua_despotism", "职场 PUA 专制观察榜"),
+            ("overwork_exploitation", "过劳剥削观察榜"),
+        ]
+        for value, label in CATEGORY_CHOICES:
             self.category_combo.addItem(label, value)
 
         category_layout.addWidget(category_label)
@@ -375,8 +381,14 @@ class MainWindow(QMainWindow):
         category_label = QLabel("选择榜单类型:")
         self.results_category_combo = QComboBox()
 
-        from apps.voting.models import VoteCategory
-        for value, label in VoteCategory.choices:
+        # 使用相同硬编码的投票类别定义 (不依赖 backend 模型)
+        CATEGORY_CHOICES = [
+            ("age_discrimination", "35+ 年龄歧视观察榜"),
+            ("gender_discrimination", "性别歧视观察榜"),
+            ("pua_despotism", "职场 PUA 专制观察榜"),
+            ("overwork_exploitation", "过劳剥削观察榜"),
+        ]
+        for value, label in CATEGORY_CHOICES:
             self.results_category_combo.addItem(label, value)
 
         layout.addWidget(category_label)
