@@ -32,10 +32,10 @@ cookies.txt
 server.log
 admin.sqlite3
 
-# PyInstaller
-desktop/build/
-desktop/dist/
-desktop/*.spec
+# PyInstaller (never commit)
+desktop/build
+desktop/dist
+*.spec
 
 # IDE
 .vscode/
@@ -65,3 +65,11 @@ backend/create_test_data.py
 backend/create_test_user.py
 backend/seed_data.py
 backend/scripts/init_data.py
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
