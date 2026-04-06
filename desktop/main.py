@@ -148,7 +148,10 @@ class MainWindow(QMainWindow):
         form_layout.addWidget(password_label)
         form_layout.addWidget(self.password_input)
         form_layout.addWidget(verify_code_label)
-        form_layout.addLayout(QHBoxLayout([self.verify_code_input, send_verify_btn]))
+        verify_hbox = QHBoxLayout()
+        verify_hbox.addWidget(self.verify_code_input)
+        verify_hbox.addWidget(send_verify_btn)
+        form_layout.addLayout(verify_hbox)
 
         # 登录/注册按钮切换
         self.login_mode = True
