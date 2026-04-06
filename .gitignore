@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django
+*.log
+media/
+backend/media/evidence/
+data.db
+cookies.txt
+server.log
+admin.sqlite3
+
+# PyInstaller
+desktop/build/
+desktop/dist/
+desktop/*.spec
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generated documents (keep source markdown, exclude generated)
+English User Manual.docx
+English User Manual.pdf
+项目开发过程记录.docx
+项目开发过程记录.pdf
+使用说明文档.docx
+使用说明文档.pdf
+免责声明.docx
+
+# Tests (optional - can remove if needed for testing data)
+test_api.py
+backend/tests_api.py
+backend/create_test_data.py
+backend/create_test_user.py
+backend/seed_data.py
+backend/scripts/init_data.py
