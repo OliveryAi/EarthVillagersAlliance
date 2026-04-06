@@ -66,10 +66,18 @@ backend/create_test_user.py
 backend/seed_data.py
 backend/scripts/init_data.py
 
+# Python cache and compiled files
 __pycache__/
+*/__pycache__/*
 *.pyc
 *.pyo
 *.pyd
 .Python
+
+# Build artifacts
 pip-log.txt
 pip-delete-this-directory.txt
+server.log
+data.db
+backend/server.log
+backend/data.db

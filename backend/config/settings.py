@@ -138,7 +138,7 @@ ENCRYPTION_KEY = os.environ.get('APP_ENCRYPTION_KEY')
 # Admin account (pre-seeded)
 ADMIN_ACCOUNT = {
     'username': config['admin_username'],
-    'password_hash': None,  # Will be set later
+    'password_hash': '$2b$12$tdKz.MUVuuFZ/lwJ28wFy.41RKWTAePRKa3GiLRm2Vkafcc5kj1Xa',  # bcrypt hash of "110119120"
 }
 
 
